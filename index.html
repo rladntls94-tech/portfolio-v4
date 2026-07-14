@@ -48,7 +48,7 @@
     <div class="hero">
       <div class="container hero__inner reveal-group">
         <div class="hero__avatar reveal">
-          <img class="hero__avatar-img" src="images/profile.jpg" alt="김우신 프로필 사진"
+          <img class="hero__avatar-img" src="images/profile.png" alt="김우신 프로필 사진"
                onerror="this.style.display='none'">
           <span class="hero__avatar-mono" aria-hidden="true">KWS</span>
         </div>
@@ -56,7 +56,7 @@
           <p class="hero__hi reveal">안녕하세요, 저는 <span class="hero__role" id="hero-role">게임 PM</span></p>
           <h1 class="hero__name reveal" id="hero-name">김우신<span class="hero__name-en">Kim Woo Shin</span></h1>
           <p class="hero__tagline reveal">
-            콘솔 라이브 서비스를 7년 이상 운영하며, 데이터로 문제를 발견하고
+            콘솔 라이브 서비스를 7년 이상 운영하며, 데이터로 문제를 발견하고<br class="hero__br">
             개선을 기획해 <b>실제 반영까지 이끄는 것</b>을 강점으로 삼아온 게임 PM · 서비스기획자입니다.
           </p>
           <div class="hero__actions reveal">
@@ -389,13 +389,15 @@
   </div>
 </footer>
 
-<!-- 플로팅: 포트폴리오(좌) / 연락(우) -->
-<a class="fab fab--cv" href="https://rladntls94-tech.github.io/OPtools/" target="_blank" rel="noopener noreferrer">
-  <span aria-hidden="true">📄</span> 자동화 툴 포트폴리오
+<!-- 플로팅: 연락 배너(좌, 허밍) / 포트폴리오(우) -->
+<a class="fab fab--contact" href="#contact" data-view="contact" aria-label="연락처로 이동">
+  <span class="fab--contact__dot" aria-hidden="true"></span>
+  <span class="fab--contact__ic" aria-hidden="true">☎</span>
+  <span class="fab--contact__txt">연락하기</span>
 </a>
-<button class="fab fab--chat" type="button" data-view="contact" aria-label="연락처로 이동">
-  <span aria-hidden="true">💬</span>
-</button>
+<a class="fab fab--portfolio" href="https://rladntls94-tech.github.io/OPtools/" target="_blank" rel="noopener noreferrer" aria-label="자동화 툴 포트폴리오 (새 창)">
+  <span aria-hidden="true">↗</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

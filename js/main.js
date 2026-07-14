@@ -151,7 +151,7 @@
 
     /* ---------- 히어로 역할 타이핑 ---------- */
     var roleEl = document.getElementById("hero-role");
-    var roles = ["게임 PM", "서비스 기획자", "라이브 디렉터", "일본어 원어민 PM"];
+    var roles = ["일본어 원어민", "글로벌 라이브 서비스 운영", "PM · GM"];
     if (roleEl && !reduceMotion) {
       var ri = 0, ci = 0, deleting = false;
       var tick = function () {
