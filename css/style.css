@@ -153,11 +153,13 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 /* =========================================================
    히어로
    ========================================================= */
-.hero { padding: clamp(44px, 6vw, 90px) 0; }
+.hero { padding: clamp(20px, 3vw, 44px) 0 clamp(10px, 1.8vw, 22px); }
 .hero__inner {
   display: flex; flex-direction: column; align-items: center; text-align: center;
-  gap: clamp(20px, 3vw, 30px);
+  gap: clamp(14px, 2vw, 22px);
 }
+/* 홈 첫 화면이 한눈에 들어오게 ABOUT 섹션을 위로 */
+#home .section { padding-top: clamp(16px, 2.4vw, 34px); }
 .hero__avatar {
   position: relative; flex: 0 0 auto;
   width: clamp(120px, 15vw, 170px); height: clamp(120px, 15vw, 170px);
