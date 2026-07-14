@@ -317,9 +317,13 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
    ========================================================= */
 .edu-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 46px; align-items: start; text-align: left; }
 .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
-.timeline::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 10px; width: 2px; background: var(--border); }
-.timeline li { position: relative; padding: 0 0 22px 26px; }
-.timeline li::before { content: ""; position: absolute; left: 0; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 3px solid var(--violet); }
+.timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 8px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, var(--violet), rgba(107,70,254,.25)); }
+.timeline li { position: relative; padding: 0 0 22px 28px; }
+.timeline li::before {
+  content: ""; position: absolute; left: 1px; top: 4px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--bg); border: 3px solid var(--violet); box-sizing: border-box;
+  box-shadow: 0 0 0 3px var(--bg);   /* 라인과 겹치는 부분을 덮어 원이 라인 위에 깔끔히 얹히게 */
+}
 .timeline__school { font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .timeline__badge { font-size: .66rem; font-weight: 600; color: #fff; background: var(--violet); padding: 2px 10px; border-radius: 999px; }
 .timeline__detail { margin: 4px 0 0; font-size: .86rem; color: var(--muted); }
@@ -357,21 +361,34 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
    ========================================================= */
 .fab { position: fixed; bottom: 22px; z-index: 90; text-decoration: none; }
 
-/* 좌하단: 연락 플로팅 배너 (허밍 = 살아있는 듯 숨쉬는 애니메이션) */
-.fab--contact {
+/* 좌하단: PDF 다운로드 플로팅 배너 (허밍 + 말풍선) */
+.fab--pdf {
   left: 22px; display: inline-flex; align-items: center; gap: 9px;
   padding: 13px 20px 13px 16px; border-radius: 999px;
+  border: none; cursor: pointer; font-family: inherit;
   background: var(--violet); color: #fff; font-weight: 700; font-size: .9rem;
   box-shadow: 0 10px 30px -8px rgba(107,70,254,.55);
   animation: hum 2.4s ease-in-out infinite;
 }
-.fab--contact:hover { animation-play-state: paused; transform: translateY(-3px) scale(1.05); box-shadow: 0 18px 40px -6px rgba(107,70,254,.85); }
-.fab--contact__ic { font-size: 1.05em; }
-.fab--contact__txt { line-height: 1; }
-.fab--contact__dot {
+.fab--pdf:hover { animation-play-state: paused; transform: translateY(-3px) scale(1.05); box-shadow: 0 18px 40px -6px rgba(107,70,254,.85); }
+.fab--pdf__ic { font-size: 1.05em; }
+.fab--pdf__txt { line-height: 1; }
+.fab--pdf__dot {
   width: 9px; height: 9px; border-radius: 50%; background: #34e29b; flex: 0 0 auto;
   box-shadow: 0 0 0 0 rgba(52,226,155,.7); animation: pulseDot 1.8s ease-out infinite;
 }
+/* 말풍선 안내 */
+.fab--pdf__bubble {
+  position: absolute; bottom: calc(100% + 11px); left: 50%; transform: translateX(-50%);
+  white-space: nowrap; background: var(--text); color: var(--bg);
+  font-size: .76rem; font-weight: 700; padding: 7px 13px; border-radius: 9px;
+  box-shadow: 0 8px 20px -6px rgba(0,0,0,.5); animation: bubbleBob 2.2s ease-in-out infinite;
+}
+.fab--pdf__bubble::after {
+  content: ""; position: absolute; top: 100%; left: 26px;
+  border: 6px solid transparent; border-top-color: var(--text);
+}
+@keyframes bubbleBob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-4px); } }
 @keyframes hum {
   0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 10px 30px -8px rgba(107,70,254,.5); }
   50%      { transform: translateY(-3px) scale(1.035); box-shadow: 0 18px 40px -6px rgba(107,70,254,.85); }
@@ -452,12 +469,42 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
   .fab--portfolio { width: 46px; height: 46px; }
 }
 
+/* =========================================================
+   인쇄 / PDF 저장 — 깔끔한 한 벌 이력서로 출력
+   ========================================================= */
+@media print {
+  :root, :root[data-theme="dark"] {
+    --bg: #fff; --bg-soft: #fff; --card: #fff; --border: #d5d5dd;
+    --text: #111; --muted: #444; --btn-dark: #111; --btn-light: #f1f1f4; --nav-bg: #fff; --shadow: none;
+  }
+  body { background: #fff !important; color: #111 !important; }
+  /* 화면 전용 크롬 숨김 */
+  .nav, .fab, .scroll-progress, .theme-toggle, .nav__toggle, .filters { display: none !important; }
+  /* 탭 뷰 전부 펼쳐서 완전한 이력서로 */
+  .js .view { display: block !important; animation: none !important; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  .hero__role::after { display: none; }
+  .section { padding: 16px 0 !important; }
+  .hero { padding: 10px 0 20px !important; }
+  h2.section__title { font-size: 1.5rem !important; }
+  /* 카드가 페이지 경계에서 잘리지 않게 */
+  .card, .project, .tool, .stat, .skillcard, .timeline li { break-inside: avoid; box-shadow: none !important; }
+  .card::after, .project::after, .tool::after { display: none !important; }
+  /* 갤러리: 가로 스크롤 대신 전부 표시 */
+  .project__gallery { overflow: visible !important; flex-wrap: wrap; scroll-snap-type: none; }
+  .project__shot { flex: 0 0 31%; }
+  .project__shot img { height: 110px; }
+  .project__shot--video a::before, .project__shot--video a::after { display: none; }
+  .projects, .cards, .tools { grid-template-columns: 1fr 1fr !important; gap: 12px !important; }
+  a { color: #111 !important; text-decoration: none; }
+}
+
 /* 모션 최소화 */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .hero__role::after, .hero__avatar.is-visible, .project.is-appearing,
-  .fab--contact, .fab--contact__dot { animation: none; }
+  .fab--pdf, .fab--pdf__dot, .fab--pdf__bubble { animation: none; }
   .scroll-progress, .card::after, .project::after, .tool::after, .ripple { display: none; }
   * { transition: none !important; }
 }
