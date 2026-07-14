@@ -481,7 +481,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
   }
   body { background: #fff !important; color: #111 !important; }
   /* 화면 전용 크롬 숨김 */
-  .nav, .fab, .scroll-progress, .theme-toggle, .nav__toggle, .filters { display: none !important; }
+  .nav, .fab, .scroll-progress, .theme-toggle, .nav__toggle, .filters, .hero__actions { display: none !important; }
   /* 탭 뷰 전부 펼쳐서 완전한 이력서로 */
   .js .view { display: block !important; animation: none !important; }
   .js .reveal { opacity: 1 !important; transform: none !important; }

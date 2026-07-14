@@ -27,7 +27,6 @@
       <a href="#work" data-view="work">경력</a>
       <a href="#education" data-view="education">학력·스킬</a>
       <a href="#tools" data-view="tools">프로젝트</a>
-      <a href="#contact" data-view="contact">연락처</a>
     </nav>
 
     <div class="nav__right">
@@ -60,10 +59,10 @@
             개선을 기획해 <b>실제 반영까지 이끄는 것</b>을 강점으로 삼아온 게임 PM · 서비스기획자입니다.
           </p>
           <div class="hero__actions reveal">
-            <a class="btn btn--dark" href="https://rladntls94-tech.github.io/OPtools/" target="_blank" rel="noopener noreferrer">
-              <span class="btn__ic" aria-hidden="true">↗</span>자동화 툴 포트폴리오
-            </a>
-            <a class="btn btn--light" href="#contact" data-view="contact">
+            <button class="btn btn--dark" type="button" onclick="window.print()">
+              <span class="btn__ic" aria-hidden="true">📄</span>경력기술서
+            </button>
+            <a class="btn btn--light" href="mailto:kimboard@naver.com">
               <span class="btn__ic" aria-hidden="true">✉</span>연락하기
             </a>
           </div>
@@ -385,21 +384,6 @@
     </div>
   </section>
 
-  <!-- ===== VIEW: 연락처 ===== -->
-  <section class="view contact" id="contact" aria-labelledby="contact-heading" tabindex="-1">
-    <div class="section">
-      <div class="container contact__inner">
-        <p class="section__eyebrow">CONTACT</p>
-        <h2 class="section__title" id="contact-heading">함께할 라이브 서비스를 찾고 있습니다</h2>
-        <p class="section__lead section__lead--center">7년간 콘솔 라이브 서비스를 지켜온 일본어 원어민 운영·기획자입니다.<br class="hero__br">라이브 운영, 글로벌·현지화, 데이터 기반 개선이 필요한 팀이라면 언제든 편하게 연락 주세요.</p>
-        <div class="contact__actions">
-          <a class="btn btn--dark" href="mailto:kimboard@naver.com"><span class="btn__ic" aria-hidden="true">✉</span>kimboard@naver.com</a>
-          <a class="btn btn--light" href="tel:01097073701"><span class="btn__ic" aria-hidden="true">☎</span>010-9707-3701</a>
-          <a class="btn btn--light" href="https://rladntls94-tech.github.io/OPtools/" target="_blank" rel="noopener noreferrer"><span class="btn__ic" aria-hidden="true">↗</span>포트폴리오</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </main>
 
@@ -409,16 +393,13 @@
   </div>
 </footer>
 
-<!-- 플로팅: PDF 다운로드 배너(좌, 말풍선) / 포트폴리오(우) -->
+<!-- 플로팅: PDF 다운로드 배너(좌, 말풍선) -->
 <button class="fab fab--pdf" type="button" onclick="window.print()" aria-label="이 포트폴리오를 PDF로 저장 (인쇄)">
   <span class="fab--pdf__bubble" aria-hidden="true">PDF로 다운로드 가능합니다</span>
   <span class="fab--pdf__dot" aria-hidden="true"></span>
   <span class="fab--pdf__ic" aria-hidden="true">📄</span>
   <span class="fab--pdf__txt">PDF 다운로드</span>
 </button>
-<a class="fab fab--portfolio" href="https://rladntls94-tech.github.io/OPtools/" target="_blank" rel="noopener noreferrer" aria-label="자동화 툴 포트폴리오 (새 창)">
-  <span aria-hidden="true">↗</span>
-</a>
 
 <script src="js/main.js"></script>
 </body>
