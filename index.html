@@ -155,138 +155,144 @@
         </div>
 
         <div class="projects" id="projects">
-          <article class="project project--featured" data-category="live">
-            <div class="project__gallery" aria-label="라이브 서비스 운영 실무 이미지">
-              <figure class="project__shot">
-                <img src="images/work-gm-event.png" alt="인게임 GM 이벤트 진행 화면" loading="lazy">
-                <figcaption>인게임 GM 이벤트 진행 화면</figcaption>
-              </figure>
-              <figure class="project__shot">
-                <img src="images/work-pspartners.png" alt="PlayStation Partners — 플랫폼 정책·배포 실무" loading="lazy">
-                <figcaption>PlayStation Partners — 플랫폼 정책·배포 실무</figcaption>
-              </figure>
-              <figure class="project__shot">
-                <img src="images/work-policy-jp.png" alt="운영 정책(運営ポリシー) 일본어 현지화 문서" loading="lazy">
-                <figcaption>운영 정책(運営ポリシー) 일본어 현지화 문서</figcaption>
-              </figure>
+
+          <article class="project" data-category="live">
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/pspartners.png" alt="PlayStation Partners — 플랫폼 정책·배포 실무" loading="lazy"><figcaption>PlayStation Partners — 플랫폼 정책·배포 실무</figcaption></figure>
+              <figure class="project__shot"><img src="images/policy_jp.png" alt="운영 정책(運営ポリシー) 일본어 현지화 문서" loading="lazy"><figcaption>운영 정책(運営ポリシー) 일본어 현지화 문서</figcaption></figure>
+              <figure class="project__shot"><img src="images/ingame_event.png" alt="인게임 GM 이벤트 진행 화면" loading="lazy"><figcaption>인게임 GM 이벤트 진행 화면</figcaption></figure>
             </div>
             <div class="project__body">
-              <div class="project__head">
-                <span class="project__tag">라이브 운영</span>
-                <span class="project__period">2019.07 ~ 현재</span>
-              </div>
-              <h3 class="project__title">콘솔 라이브 서비스 정기 운영</h3>
+              <div class="project__head"><span class="project__tag">라이브 운영</span><span class="project__period">2019.07 ~ 진행 중</span></div>
+              <h3 class="project__title">라이브 서비스 운영</h3>
               <p class="project__tags">#일본어전담 · #자동화 · #7년+</p>
-              <p class="project__metric">중상위 유저 약 30% 상위 진입 · 검수 90분→5분(95%↓) · 정기 업데이트 140회+</p>
-              <ul class="project__list">
-                <li>유저 공·방 분포 정기 분석으로 성장 병목을 발견하고, 재료 획득 이벤트로 가설을 검증한 뒤 콘텐츠 개선을 제안·반영 — 중상위 유저의 <b>약 30%가 상위 구간으로 진입</b>.</li>
-                <li>다국어 패치노트의 한국어 원문 노출 문제를 Python·생성형 AI 자동 검출 툴로 해결 — 검수 <b>90분→5분(95%↓)</b>, 도입 후 <b>노출 사고 0건</b>. 자동화 웹 툴 4종 직접 개발·배포.</li>
-                <li>매크로 대응 프로세스 설계로 이의제기 분쟁 <b>0건</b> 유지. CrowdStrike 글로벌 장애 새벽 긴급 대응. X·Discord 커뮤니티 운영, 일본어 공지·약관 현지화, 공식 유튜브 출연.</li>
+              <p class="project__desc">격주 정기점검과 업데이트를 7년 넘게 이어온 메인 스킬. 일본어 공지·약관 현지화, X·Discord 커뮤니티 운영, 인게임 GM 활동, 공식 유튜브 영상 출연, 검출 툴 개발까지 라이브의 모든 국면을 커버한다.</p>
+              <ul class="project__stats">
+                <li><span class="k">격주 업데이트</span><b>140회+</b></li>
+                <li><span class="k">검수 시간</span><b>90분 → 5분</b></li>
+                <li><span class="k">한국어 원문 노출 사고</span><b>0건</b></li>
+                <li><span class="k">중상위 유저 상위 진입</span><b>약 30%</b></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="platform">
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/paid.png" alt="다국가 서비스 → 통합 계정(PA ID) 전환 구조" loading="lazy"><figcaption>다국가 서비스 → 통합 계정(PA ID) 전환 구조</figcaption></figure>
+              <figure class="project__shot"><img src="images/checklist.png" alt="점검 당일 크로스체크 체크리스트" loading="lazy"><figcaption>점검 당일 크로스체크 체크리스트</figcaption></figure>
+              <figure class="project__shot"><img src="images/qa_check.png" alt="이관 사전 QA 확인 항목 설계" loading="lazy"><figcaption>이관 사전 QA 확인 항목 설계</figcaption></figure>
+            </div>
+            <div class="project__body">
+              <div class="project__head"><span class="project__tag">플랫폼·글로벌</span><span class="project__period">2025.06 ~ 2025.12</span></div>
+              <h3 class="project__title">글로벌 계정 통합</h3>
+              <p class="project__tags">#11개언어권 · #사전QA · #체크리스트</p>
+              <p class="project__desc">Pearl Abyss ID 통합 전환. 사전 QA에서 미공유 스펙 변경 2건을 직접 발견해 FAQ·CS 템플릿을 선제 구축하고, 점검 당일 체크리스트를 총괄하며 미국 오피스와 실시간 협업했다.</p>
+              <ul class="project__stats">
+                <li><span class="k">CS 유입 억제</span><b>예측 대비 54%</b></li>
+                <li><span class="k">이관 당일 이슈</span><b>0건</b></li>
+                <li><span class="k">점검 종료</span><b>2시간 조기</b></li>
+                <li><span class="k">발견 스펙 변경</span><b>2건</b></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="platform">
+            <div class="project__gallery">
+              <figure class="project__shot project__shot--video">
+                <a href="https://www.youtube.com/watch?v=yi6oxIYmppY" target="_blank" rel="noopener noreferrer">
+                  <img src="images/video.png" alt="유저 대상 공식 안내 영상 — 일본어 담당으로 직접 출연" loading="lazy">
+                </a>
+                <figcaption>유저 대상 공식 안내 영상 — 일본어 담당으로 직접 출연</figcaption>
+              </figure>
+              <figure class="project__shot"><img src="images/refund.png" alt="환불 안내 문구 법무 검토 협의" loading="lazy"><figcaption>환불 안내 문구 법무 검토 협의</figcaption></figure>
+            </div>
+            <div class="project__body">
+              <div class="project__head"><span class="project__tag">플랫폼·글로벌</span><span class="project__period">2024.11 ~ 2025.08</span></div>
+              <h3 class="project__title">PS5/XBS 세대 전환</h3>
+              <p class="project__tags">#서비스종료 · #자금결제법 · #BM</p>
+              <p class="project__desc">구세대 서비스 종료와 차세대 전환. 각국 환불 규정과 일본 자금결제법을 선제 검토해 환불 기준을 세우고, 판매 데이터 기반 BM 기획과 로드맵 선공개·안내 영상 출연으로 이탈을 방어했다.</p>
+              <ul class="project__stats">
+                <li><span class="k">전환기 매출</span><b>210% 성장</b></li>
+                <li><span class="k">법적 분쟁</span><b>0건 · 실환불 1건</b></li>
+                <li><span class="k">크래시율</span><b>8.4% → 0.9%</b></li>
+                <li><span class="k">이탈률</span><b>예상 8~10% → 4~6%</b></li>
               </ul>
             </div>
           </article>
 
           <article class="project" data-category="biz">
-            <div class="project__cover project__cover--b">
-              <span class="project__cover-tag">기획·BM</span>
-              <span class="project__cover-metric">4.2<small>PS 리뷰 평점 (3.7→4.2)</small></span>
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/retail.png" alt="프레스티지 에디션 패키지 구성" loading="lazy"><figcaption>프레스티지 에디션 패키지 구성</figcaption></figure>
             </div>
             <div class="project__body">
-              <div class="project__head"><span class="project__period">2026.03 ~ 2026.06 · 4개월</span></div>
-              <h3 class="project__title">붉은사막 신작 준비팀 파견</h3>
-              <p class="project__metric">PS 리뷰 평점 3.7 → 4.2 · 스팀 긍정 비율 22%p 개선 (팀 성과)</p>
-              <ul class="project__list">
-                <li>테스트 플레이·리뷰 추이를 언어·국가별로 분석해 CS·리뷰 모니터링 체계와 이슈 대응 프로세스를 수립하고 QA 재현을 수행.</li>
-                <li>CS 인입 추이 분석으로 포럼 중심 피드백 수집의 한계를 데이터로 시각화해 제시하고, 운영툴 기반 데이터 수집 프로세스로의 전환을 기획·개발 요청.</li>
-                <li>팀 차원 스팀 긍정 22%p 개선·PS 평점 3.7→4.2 달성. 본인은 리뷰·CS 데이터 분석과 프로세스 전환 기획을 담당.</li>
+              <div class="project__head"><span class="project__tag">기획·BM</span><span class="project__period">2020.05 ~ 2020.11</span></div>
+              <h3 class="project__title">리테일 패키지 발매</h3>
+              <p class="project__tags">#직접제안 · #일본문화 · #에디션</p>
+              <p class="project__desc">일본에서 자라며 체득한 실물 패키지 선호 문화를 근거로 직접 제안해 회사를 설득, 기획부터 출시까지 주도한 프로젝트.</p>
+              <ul class="project__stats">
+                <li><span class="k">글로벌 NRU</span><b>183% 증가</b></li>
+                <li><span class="k">웹 방문자</span><b>140% 상승</b></li>
+                <li><span class="k">패키지 유저 D30 잔존율</span><b>38%</b></li>
               </ul>
             </div>
           </article>
 
           <article class="project" data-category="platform">
-            <div class="project__cover project__cover--c">
-              <span class="project__cover-tag">플랫폼·글로벌</span>
-              <span class="project__cover-metric">54%<small>CS 유입 예측 대비 억제</small></span>
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/ppa_award_stage.jpg" alt="PlayStation Partner Awards 2020 시상식 현장" loading="lazy"><figcaption>PlayStation Partner Awards 2020 시상식 현장</figcaption></figure>
+              <figure class="project__shot"><img src="images/award.png" alt="PlayStation Partner Awards 2020 (Japan Asia) — 팀 수상" loading="lazy"><figcaption>PlayStation Partner Awards 2020 (Japan Asia) — 팀 수상</figcaption></figure>
+              <figure class="project__shot"><img src="images/gantt.png" alt="론칭 일정 역산·부서별 R&amp;R 관리" loading="lazy"><figcaption>론칭 일정 역산·부서별 R&amp;R 관리</figcaption></figure>
             </div>
             <div class="project__body">
-              <div class="project__head"><span class="project__period">2025.06 ~ 2025.12 · 6개월</span></div>
-              <h3 class="project__title">글로벌 멀티 플랫폼 웹 계정 통합</h3>
-              <p class="project__metric">CS 54% 억제 · 이관 당일 이슈 0건 · 2시간 조기 종료</p>
-              <ul class="project__list">
-                <li>사전 QA에서 미공유 스펙 변경 2건(쿠폰 수령 방식, 연동 해제 시 6개월 잠금)을 직접 발견해 사전 공지·CS 템플릿을 정비하고, 90일 연동 해제 지원책을 설계.</li>
-                <li>선행 적용 국가의 결제·쿠폰 오류, 계정 초기화 이슈를 분석해 알파 환경 재현 테스트와 FAQ 선제 작성을 리딩.</li>
-                <li>점검 당일 약관·쿠폰 이관·마이그레이션 체크리스트를 총괄하며 미국 오피스와 실시간 협업 — <b>CS 54% 억제, 당일 이슈 0건</b>.</li>
+              <div class="project__head"><span class="project__tag">플랫폼·글로벌</span><span class="project__period">2019.10 ~ 2020.05</span></div>
+              <h3 class="project__title">크로스 플레이 도입</h3>
+              <p class="project__tags">#한국최초 · #PPA2020수상 · #매크로대응</p>
+              <p class="project__desc">한국 최초 콘솔 MMORPG 크로스플레이. 출시 일정 역산과 거점전 세금 동기화 이슈 선제 발견으로 부서 협의를 이끌고, 매크로 대응 프로세스를 설계해 제재 후속 분쟁 0건을 유지했다.</p>
+              <ul class="project__stats">
+                <li><span class="k">복귀 유저</span><b>350% 증가</b></li>
+                <li><span class="k">NRU / DAU</span><b>250% / 126%</b></li>
+                <li><span class="k">수상</span><b>PS Partner Awards 2020</b></li>
+                <li><span class="k">제재 후속 분쟁</span><b>0건</b></li>
               </ul>
             </div>
           </article>
 
           <article class="project" data-category="platform">
-            <div class="project__cover project__cover--d">
-              <span class="project__cover-tag">플랫폼·글로벌</span>
-              <span class="project__cover-metric">210%<small>세대전환기 매출 성장</small></span>
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/ps_store_rank1.png" alt="일본 PS 스토어 PS4 랭킹 1위 — 검은사막" loading="lazy"><figcaption>일본 PS 스토어 PS4 랭킹 1위 — 검은사막</figcaption></figure>
+              <figure class="project__shot"><img src="images/sns_rt_event.png" alt="PS4 랭킹 1위 기념 리트윗 캠페인 — 직접 기획" loading="lazy"><figcaption>PS4 랭킹 1위 기념 리트윗 캠페인 — 직접 기획</figcaption></figure>
             </div>
             <div class="project__body">
-              <div class="project__head"><span class="project__period">2024.11 ~ 2025.08 · 9개월</span></div>
-              <h3 class="project__title">PS4/XB One → PS5/XBS 플랫폼 전환·종료</h3>
-              <p class="project__metric">매출 210% 성장 · 법적 분쟁 0건 · 크래시율 8.4%→0.9%</p>
-              <ul class="project__list">
-                <li>역대 패키지·DLC 판매 데이터를 분석해 차세대 전용 패키지 구성을 제안하고, 강화 수요 예측 기반 BM을 기획(업데이트 3주 후 배치).</li>
-                <li>각국 환불 규정·타사 종료 사례를 조사해 환불 기준을 수립하고 일본 자금결제법을 선제 검토 — 실환불 <b>1건</b>.</li>
-                <li>기기별 크래시 환경 분석·최적화, 이탈 방어 로드맵 선공개·안내 영상 기획 및 일본어 담당 출연 — <b>매출 210% 성장을 법적 분쟁 0건으로 통과</b>.</li>
+              <div class="project__head"><span class="project__tag">플랫폼·글로벌</span><span class="project__period">2019.07 ~ 2019.11</span></div>
+              <h3 class="project__title">PS4 론칭</h3>
+              <p class="project__tags">#CERO · #FAQ선제 · #일본1위</p>
+              <p class="project__desc">스토어 구매테스트 프로세스 구축과 한/영/독/불 R&amp;R 배분, 선행 플랫폼 데이터 분석 기반 FAQ 선제 배포, CERO 심의 확인과 약관 일본어 현지화 등 일본 출시 요건 대응을 도맡았다.</p>
+              <ul class="project__stats">
+                <li><span class="k">일본 PS 스토어</span><b>랭킹 1위</b></li>
+                <li><span class="k">론칭 4주 MCU</span><b>90% 유지</b></li>
+                <li><span class="k">CS 인입</span><b>예상 30% → 12%</b></li>
+                <li><span class="k">도쿄 협업 리트윗 이벤트</span><b>RT 1,000 · 팔로워 +1,500</b></li>
               </ul>
             </div>
           </article>
 
           <article class="project" data-category="biz">
-            <div class="project__cover project__cover--e">
-              <span class="project__cover-tag">기획·BM</span>
-              <span class="project__cover-metric">183%<small>글로벌 신규 유저 증가</small></span>
+            <div class="project__gallery">
+              <figure class="project__shot"><img src="images/review_trend.jpg" alt="스팀 리뷰 언어별 긍정 비율 추이 분석" loading="lazy"><figcaption>스팀 리뷰 언어별 긍정 비율 추이 분석</figcaption></figure>
+              <figure class="project__shot"><img src="images/cs_heatmap.png" alt="CS 카테고리별 추이 히트맵 (수치 비식별화)" loading="lazy"><figcaption>CS 카테고리별 추이 히트맵 (수치 비식별화)</figcaption></figure>
             </div>
             <div class="project__body">
-              <div class="project__head"><span class="project__period">2020.05 ~ 2020.11 · 6개월</span></div>
-              <h3 class="project__title">콘솔 리테일 패키지 기획</h3>
-              <p class="project__metric">글로벌 신규 유저 183%↑ · 웹 방문자 140%↑ · D30 잔존율 38%</p>
-              <ul class="project__list">
-                <li>일본에서 자라며 체득한 실물 패키지 선호 문화를 근거로 리테일 패키지 판매를 직접 제안, 설득부터 출시까지 주도한 본인 발의 프로젝트.</li>
-                <li>판매 데이터 분석 기반 구성품 선별, 전용 아이템·에디션 기획, 오프라인 채널·에디션 랜딩 페이지 기획 및 글로벌 홍보 전개.</li>
-                <li>결과: NRU <b>183% 증가</b>, 웹 방문자 <b>140% 상승</b>, 패키지 구매 유저 D30 잔존율 <b>38%</b>.</li>
+              <div class="project__head"><span class="project__tag">기획·BM</span><span class="project__period">2026.03 ~ 2026.06 (파견 후 복귀)</span></div>
+              <h3 class="project__title">붉은사막 신작 준비</h3>
+              <p class="project__tags">#리뷰분석 · #운영툴전환</p>
+              <p class="project__desc">신작 준비팀에 파견되어 테스트 플레이·리뷰 추이 분석 기반 이슈 대응 프로세스를 세우고, CS·포럼 수집의 한계를 데이터로 증명해 운영툴 기반 수집으로 전환을 주도했다.</p>
+              <ul class="project__stats">
+                <li><span class="k">스팀 리뷰 긍정 비율(2,000건당)</span><b>22%p 개선</b></li>
+                <li><span class="k">PS 리뷰 평점</span><b>3.7 → 4.2</b></li>
               </ul>
             </div>
           </article>
 
-          <article class="project" data-category="platform">
-            <div class="project__cover project__cover--f">
-              <span class="project__cover-tag">플랫폼·글로벌</span>
-              <span class="project__cover-metric">🏆<small>PS Partner Awards 2020</small></span>
-            </div>
-            <div class="project__body">
-              <div class="project__head"><span class="project__period">2019.10 ~ 2020.05 · 7개월</span></div>
-              <h3 class="project__title">PlayStation · Xbox 크로스플레이 론칭</h3>
-              <p class="project__metric">Partner Awards 2020 수상 · 복귀 유저 350%↑ · DAU 126%↑</p>
-              <ul class="project__list">
-                <li>PS/XB 제출 프로세스를 파악하고 출시 일정 역산·버전 동기화를 조율. 인게임 데이터(거점전 세금) 동기화 이슈를 선제 발견해 기획/DB/프로그램팀 협의를 리딩.</li>
-                <li>매크로 대응 프로세스(신고→모니터링→GM 검증 3회→증거 영상→제재)를 설계.</li>
-                <li>결과: 한국 최초 콘솔 MMORPG 크로스플레이 론칭 — <b>PlayStation Partner Awards 2020 수상</b>. 복귀 350%·NRU 250%·DAU 126% 증가.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="project" data-category="platform">
-            <div class="project__cover project__cover--g">
-              <span class="project__cover-tag">플랫폼·글로벌</span>
-              <span class="project__cover-metric">#1<small>일본 PS 스토어 랭킹</small></span>
-            </div>
-            <div class="project__body">
-              <div class="project__head"><span class="project__period">2019.07 ~ 2019.11 · 4개월</span></div>
-              <h3 class="project__title">PS4 론칭 및 서비스 운영</h3>
-              <p class="project__metric">일본 PS 스토어 랭킹 1위 · MCU 90% 유지 · CS 인입 30%→12%</p>
-              <ul class="project__list">
-                <li>스토어 구매테스트 프로세스를 구축하고 한/영/독/불 4개 언어 운영 R&amp;R을 설계·배분.</li>
-                <li>선행 플랫폼 CS 데이터를 분석해 FAQ를 선제 작성, DM 캠페인·도쿄 오피스 협업 리트윗 이벤트 기획. CERO 대응 및 약관·정책 일본어 현지화.</li>
-                <li>결과: 일본 PS 스토어 랭킹 <b>1위</b>, 론칭 4주 MCU <b>90% 유지</b>, CS 인입 예상 30% 대비 실제 <b>12%</b> 억제.</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </div>

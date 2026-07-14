@@ -170,7 +170,7 @@
 
     /* ---------- 3D 틸트 + 커서 광택 ---------- */
     if (finePointer && !reduceMotion) {
-      document.querySelectorAll(".card, .project, .tool").forEach(function (el) {
+      document.querySelectorAll(".card, .tool").forEach(function (el) {
         el.addEventListener("mouseenter", function () { el.style.transition = "transform 60ms linear"; });
         el.addEventListener("mousemove", function (e) {
           var r = el.getBoundingClientRect();
