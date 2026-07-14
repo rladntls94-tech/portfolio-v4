@@ -48,6 +48,10 @@ body {
   line-height: 1.7; font-size: 16px;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   transition: background .3s, color .3s;
+  /* 한국어: 단어(어절) 단위로만 줄바꿈 → 음절 중간 끊김 방지.
+     overflow-wrap로 긴 영문/URL만 예외적으로 강제 줄바꿈해 넘침 방지. */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 a { color: inherit; }
