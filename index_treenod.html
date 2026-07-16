@@ -607,17 +607,9 @@
       });
     }
 
-    /* ---------- 마그네틱 버튼 ---------- */
-    if (finePointer && !reduceMotion) {
-      document.querySelectorAll(".btn--dark").forEach(function (el) {
-        el.classList.add("is-magnetic");
-        el.addEventListener("mousemove", function (e) {
-          var r = el.getBoundingClientRect();
-          el.style.transform = "translate(" + ((e.clientX - (r.left + r.width / 2)) * 0.28).toFixed(1) + "px," + ((e.clientY - (r.top + r.height / 2)) * 0.4).toFixed(1) + "px)";
-        });
-        el.addEventListener("mouseleave", function () { el.style.transform = ""; });
-      });
-    }
+    /* ---------- 버튼 모션 통일: 마그네틱(커서 추종) 제거 ----------
+       경력기술서(.btn--dark)에만 걸려 있던 마그네틱 효과를 없애,
+       경력기술서·연락하기·툴 버튼이 전부 동일하게 CSS .btn:hover(살짝 위로 -2px)로만 반응합니다. */
 
     /* ---------- 스크롤 진행 바 ---------- */
     if (!reduceMotion) {
