@@ -1,6 +1,6 @@
 /* =========================================================
    김우신 포트폴리오 — vinit11portfolio 오마쥬 (1:1 목표)
-   실측 토큰: Space Grotesk / #DB2777(treenod pink) / #FFB344 / 카드 radius16·#F8F9FC
+   실측 토큰: Space Grotesk / #15803D(treenod green) / #FFB344 / 카드 radius16·#F8F9FC
              / 버튼 radius8·블랙 / 중앙정렬 타이틀 / 다크 토글
    ========================================================= */
 
@@ -30,8 +30,8 @@
 }
 
 :root {
-  --violet:  #db2777;
-  --violet-d:#be185d;
+  --violet:  #15803d;
+  --violet-d:#0f5f2e;
   --orange:  #ffb344;
   --font: "Space Grotesk", "Pretendard", -apple-system, BlinkMacSystemFont,
           "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
@@ -116,7 +116,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
   content: "☀"; position: absolute; inset: 0; text-align: center;
   line-height: 18px; font-size: 16px; color: var(--orange);
 }
-:root[data-theme="dark"] .theme-toggle__icon::before { content: "☾"; color: #f9a8d4; }
+:root[data-theme="dark"] .theme-toggle__icon::before { content: "☾"; color: #86efac; }
 
 /* 햄버거 */
 .nav__toggle {
@@ -168,9 +168,9 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
   position: relative; flex: 0 0 auto;
   width: clamp(120px, 15vw, 170px); height: clamp(120px, 15vw, 170px);
   display: grid; place-items: center; border-radius: 50%; overflow: hidden;
-  background: linear-gradient(150deg, #f472b6, var(--violet) 55%, var(--orange));
+  background: linear-gradient(150deg, #4ade80, var(--violet) 55%, var(--orange));
   color: #fff; font-weight: 700; font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: .04em;
-  box-shadow: 0 20px 46px -20px rgba(107,70,254,.7);
+  box-shadow: 0 20px 46px -20px rgba(21,128,61,.7);
 }
 .hero__avatar-mono { position: relative; z-index: 0; }
 .hero__avatar-img {
@@ -182,7 +182,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 /* 노란(오렌지) 강조 → 코럴→골드 그라데이션 텍스트 */
 .hero__role {
   font-weight: 700;
-  background: linear-gradient(90deg, #db2777 0%, #ff9147 50%, #ffc24d 100%);
+  background: linear-gradient(90deg, #15803d 0%, #ff9147 50%, #ffc24d 100%);
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
@@ -301,11 +301,11 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 .project__stats .k { color: var(--muted); }
 .project__stats b { color: var(--violet); font-weight: 700; text-align: right; white-space: nowrap; }
 
-.project__cover--a { background: linear-gradient(140deg, #db2777, #f9a8d4); }
+.project__cover--a { background: linear-gradient(140deg, #15803d, #86efac); }
 .project__cover--b { background: linear-gradient(140deg, #ff8c42, #ffb344); }
 .project__cover--c { background: linear-gradient(140deg, #2f9e78, #46c79a); }
-.project__cover--d { background: linear-gradient(140deg, #e0466b, #ff7aa0); }
-.project__cover--e { background: linear-gradient(140deg, #db2777, #ec4899); }
+.project__cover--d { background: linear-gradient(140deg, #16a34a, #4ade80); }
+.project__cover--e { background: linear-gradient(140deg, #15803d, #22c55e); }
 .project__cover--f { background: linear-gradient(140deg, #d99a1c, #f5c451); }
 .project__cover--g { background: linear-gradient(140deg, #3763d9, #5aa0f5); }
 .project__body { padding: 4px 8px 8px; }
@@ -323,7 +323,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
    ========================================================= */
 .edu-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 46px; align-items: start; text-align: left; }
 .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
-.timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 8px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, var(--violet), rgba(107,70,254,.25)); }
+.timeline::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 8px; width: 2px; border-radius: 2px; background: linear-gradient(180deg, var(--violet), rgba(21,128,61,.25)); }
 .timeline li { position: relative; padding: 0 0 22px 28px; }
 .timeline li::before {
   content: ""; position: absolute; left: 1px; top: 4px; width: 12px; height: 12px;
@@ -373,10 +373,10 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
   padding: 13px 20px 13px 16px; border-radius: 999px;
   border: none; cursor: pointer; font-family: inherit;
   background: var(--violet); color: #fff; font-weight: 700; font-size: .9rem;
-  box-shadow: 0 10px 30px -8px rgba(107,70,254,.55);
+  box-shadow: 0 10px 30px -8px rgba(21,128,61,.55);
   animation: hum 2.4s ease-in-out infinite;
 }
-.fab--pdf:hover { animation-play-state: paused; transform: translateY(-3px) scale(1.05); box-shadow: 0 18px 40px -6px rgba(107,70,254,.85); }
+.fab--pdf:hover { animation-play-state: paused; transform: translateY(-3px) scale(1.05); box-shadow: 0 18px 40px -6px rgba(21,128,61,.85); }
 .fab--pdf__ic { font-size: 1.05em; }
 .fab--pdf__txt { line-height: 1; }
 .fab--pdf__dot {
@@ -396,8 +396,8 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 }
 @keyframes bubbleBob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-4px); } }
 @keyframes hum {
-  0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 10px 30px -8px rgba(107,70,254,.5); }
-  50%      { transform: translateY(-3px) scale(1.035); box-shadow: 0 18px 40px -6px rgba(107,70,254,.85); }
+  0%, 100% { transform: translateY(0) scale(1); box-shadow: 0 10px 30px -8px rgba(21,128,61,.5); }
+  50%      { transform: translateY(-3px) scale(1.035); box-shadow: 0 18px 40px -6px rgba(21,128,61,.85); }
 }
 @keyframes pulseDot {
   0%   { box-shadow: 0 0 0 0 rgba(52,226,155,.7); }
@@ -425,7 +425,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 .card, .project, .tool { transform-style: preserve-3d; will-change: transform; }
 .card::after, .project::after, .tool::after {
   content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .3s;
-  background: radial-gradient(240px circle at var(--mx,50%) var(--my,50%), rgba(107,70,254,.14), transparent 62%);
+  background: radial-gradient(240px circle at var(--mx,50%) var(--my,50%), rgba(21,128,61,.14), transparent 62%);
 }
 .card.is-tilting::after, .project.is-tilting::after, .tool.is-tilting::after { opacity: 1; }
 .card:hover, .tool:hover { box-shadow: 0 16px 36px -18px rgba(0,0,0,.3); }
@@ -433,7 +433,7 @@ h1, h2, h3 { margin: 0; color: var(--text); line-height: 1.22; }
 .btn, .filter { position: relative; overflow: hidden; }
 .fab { position: fixed; }
 .ripple { position: absolute; border-radius: 50%; transform: scale(0); background: rgba(255,255,255,.5); pointer-events: none; animation: ripple .6s ease-out forwards; }
-.btn--light .ripple, .filter .ripple { background: rgba(107,70,254,.25); }
+.btn--light .ripple, .filter .ripple { background: rgba(21,128,61,.25); }
 @keyframes ripple { to { transform: scale(2.6); opacity: 0; } }
 
 .project.is-appearing { animation: pop .42s cubic-bezier(.2,.7,.3,1); }
